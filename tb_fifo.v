@@ -62,9 +62,9 @@ module tb_fifo;
 		#1000 rstN = 1;
 	   for (i = 0; i < 16; i = i +1) begin
 		
-		$fwrite(f,"Input: %g\t  %b%b", $time, rstN , incr);                                                                                                        
+		$fwrite(f,"Input: %g\t  %b%b,\t", $time, rstN , incr);                                                                                                        
 			
-		$fwrite(f,"Output: %d \r\n", dataOut);                                                                                                        
+		$fwrite(f,"Output: %d,\r\n", dataOut);                                                                                                        
 		#1000 incr = ~incr;
 				
 				
