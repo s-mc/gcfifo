@@ -1,0 +1,17 @@
+Input: 100	  10 Output: x 
+Input: 3100	  10Output: 0 
+Input: 4100	  11Output: 0 
+Input: 5100	  10Output: 1 
+Input: 6100	  11Output: 1 
+Input: 7100	  10Output: 3 
+Input: 8100	  11Output: 3 
+Input: 9100	  10Output: 2 
+Input: 10100	  11Output: 2 
+Input: 11100	  10Output: 6 
+Input: 12100	  11Output: 6 
+Input: 13100	  10Output: 7 
+Input: 14100	  11Output: 7 
+Input: 15100	  10Output: 5 
+Input: 16100	  11Output: 5 
+Input: 17100	  10Output: 4 
+Input: 18100	  11Output: 4 

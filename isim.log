@@ -1,0 +1,95 @@
+ISim log file
+Running: C:\Users\ProBook\Documents\fpga\xilinx_projects\fifo\tb_fifo_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ProBook/Documents/fpga/xilinx_projects/fifo/tb_fifo_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                 100 << Starting the Simulation >>
+Input: 100	  10 Output: x 
+
+
+# run all
+Input: 2100	  00 Output: 0 
+
+
+Input: 3100	  10 Output: 0 
+
+
+Input: 4100	  11 Output: 0 
+
+
+Input: 4500	  11 Output: 1 
+
+
+Input: 5100	  10 Output: 1 
+
+
+Input: 6100	  11 Output: 1 
+
+
+Input: 6500	  11 Output: 3 
+
+
+Input: 7100	  10 Output: 3 
+
+
+Input: 8100	  11 Output: 3 
+
+
+Input: 8500	  11 Output: 2 
+
+
+Input: 9100	  10 Output: 2 
+
+
+Input: 10100	  11 Output: 2 
+
+
+Input: 10500	  11 Output: 6 
+
+
+Input: 11100	  10 Output: 6 
+
+
+Input: 12100	  11 Output: 6 
+
+
+Input: 12500	  11 Output: 7 
+
+
+Input: 13100	  10 Output: 7 
+
+
+Input: 14100	  11 Output: 7 
+
+
+Input: 14500	  11 Output: 5 
+
+
+Input: 15100	  10 Output: 5 
+
+
+Input: 16100	  11 Output: 5 
+
+
+Input: 16500	  11 Output: 4 
+
+
+Input: 17100	  10 Output: 4 
+
+
+Input: 18100	  11 Output: 4 
+
+
+Input: 18500	  11 Output: 0 
+
+
+               19100 << Ending the Simulation >>
+Stopped at time : 19100 ns : File "C:/Users/ProBook/Documents/fpga/xilinx_projects/fifo/tb_fifo.v" Line 75

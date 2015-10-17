@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/ProBook/Documents/fpga/xilinx_projects/fifo/tb_fifo_isim_beh.exe" -prj "C:/Users/ProBook/Documents/fpga/xilinx_projects/fifo/tb_fifo_beh.prj" "work.tb_fifo" "work.glbl" 
