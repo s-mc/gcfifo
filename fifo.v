@@ -21,7 +21,7 @@
 module fifo(
     input clk,
 	 input rstN,
-	 input incr,
+	 //input incr,
     //input dataIn,
     output [2:0] dataOut
     );
@@ -37,7 +37,7 @@ assign dataOut = grayCnt;
 always @ (posedge clk or negedge rstN) begin
 	if ( !rstN) begin
 		grayCnt <= GRAY0;
-	end else if (incr)
+	end else if (clk)
 	case (grayCnt)
 	GRAY0:  grayCnt <= GRAY1;
 	GRAY1:  grayCnt <= GRAY2;

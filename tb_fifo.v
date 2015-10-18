@@ -27,7 +27,6 @@ module tb_fifo;
 	// Inputs
 	reg clk;
 	reg rstN;
-	reg incr;
 	integer i;
 	integer f;
 	// Outputs
@@ -37,7 +36,7 @@ module tb_fifo;
 	fifo uut (
 		.clk(clk), 
 		.rstN(rstN), 
-		.incr(incr), 
+		//.incr(incr), 
 		.dataOut(dataOut)
 	);
 
@@ -47,14 +46,14 @@ module tb_fifo;
 		// Initialize Inputs
 		clk = 0;
 		rstN = 1;
-		incr = 0;
+		
 
 		// Wait 100 ns for global reset to finish
 		#100;
 		
 		$display($time, " << Starting the Simulation >>");
-	   $monitor ("Input: %g\t  %b%b Output: %d \r\n", $time, rstN , incr, dataOut);
-      $fwrite(f,"Input: %g\t  %b%b Output: %d \r\n", $time, rstN , incr, dataOut);                                                                                                        
+	   $monitor ("Input: %g\t  %b Output: %d \r\n", $time, rstN , dataOut);
+      $fwrite(f,"Input: %g\t  %b Output: %d \r\n", $time, rstN , dataOut);                                                                                                        
 		#1000 rstN = 1;
 			
 		// Add stimulus here
@@ -62,10 +61,10 @@ module tb_fifo;
 		#1000 rstN = 1;
 	   for (i = 0; i < 16; i = i +1) begin
 		
-		$fwrite(f,"Input: %g\t  %b%b,\t", $time, rstN , incr);                                                                                                        
+		$fwrite(f,"Input: %g\t  %b,\t", $time, rstN );                                                                                                        
 			
-		$fwrite(f,"Output: %d,\r\n", dataOut);                                                                                                        
-		#1000 incr = ~incr;
+		#1000 $fwrite(f,"Output: %d,\r\n", dataOut);                                                                                                        
+		// incr = ~incr;
 				
 				
 				
